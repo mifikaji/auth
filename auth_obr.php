@@ -22,5 +22,10 @@ if ($mysqli == false){
         $_SESSION['id']=$result{'id'};
     }else{
         echo "user_not_found";
-    }
+    };
+    // if ($result->num_rows!=0){
+    //     print("exist");
+    // }else{
+    //     print("doesn't exist");
+    // };
 }
