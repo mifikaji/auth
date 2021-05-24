@@ -3,6 +3,7 @@ session_start();
 header('Content-Type: text/html; charset=utf-8');
 $mysqli=mysqli_connect("localhost", "a0528181_sdo_407", "14032000", "a0528181_sdo_407");
 
+
 if ($mysqli == false){
     print("Error!");
 }else{
@@ -21,10 +22,5 @@ if ($mysqli == false){
         $_SESSION['id']=$result{'id'};
     }else{
         echo "user_not_found";
-    };
-    // if ($result->num_rows!=0){
-    //     print("exist");
-    // }else{
-    //     print("doesn't exist");
-    // };
+    }
 }
